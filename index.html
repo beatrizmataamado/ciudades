@@ -20,6 +20,7 @@
   
            
 <nav style="display: flex; gap: 40px; background: rgb(236, 214, 116); padding: 10px; justify-content: center; font-family: muli; font-size: 25px;">
+    <!--link paris--><div><a style="text-decoration: none; color: #5f3b04;  font-family: Muli, sans-serif;; font-size: 50px;"  href="index.html"><b>INICIO</b></a></div>
     <!--link paris--><div><a style="text-decoration: none; color: #5f3b04;  font-family: Muli, sans-serif;; font-size: 50px;"  href="1paris.html"><b>PARIS</b></a></div>
     <!--link London--><div><a style="text-decoration: none; color: #5f3b04;  font-family: Muli, sans-serif;; font-size: 50px;" href="2london.html"><b>LONDRES</b></a></div>
     <!--link NY--><div><a style="text-decoration: none; color: #5f3b04;  font-family: Muli, sans-serif;; font-size: 50px;" href="3ny.html"><b>NUEVA YORK</b></a></div>
@@ -30,24 +31,38 @@
 <main style="padding: 10; justify-content: space-between;">
 		
 
-<!--imagenes--><div style="display: flex; align-items: center; align-content: center; padding: 30px; justify-content: space-between; justify-items:center;">
-
-         <div style="flex: 1; padding: 20px; justify-content: center; align-content: center; position: relative;">
-                        <img img src="IMAGENES/1paris7.jpg" alt="paris" style="flex:1; border-radius: 4%;"></div>
-                        
-                  
-          <div style="flex: 1; padding: 20px; justify-content: center; align-content: center; position: relative;">
-                        <img img src="IMAGENES/2london7.jpg" alt="paris" style="flex:1; border-radius: 4%;"></div>
-            
-          <div style="flex: 1; padding: 20px; justify-content: center; align-content: center; position: relative;">
-                        <img img src="IMAGENES/3ny7.jpg" alt="paris" style="flex:1; border-radius: 4%;"></div>
+<!--imagenes--><div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding: 10px; justify-content: space-between; ">
+                    <img src="IMAGENES/1paris7.jpg" alt="paris" style="border-radius: 4%; width: 30%; height: auto;">
+                    <img src="IMAGENES/2london7.jpg" alt="paris" style="border-radius: 4%; width: 30%; height: auto;">
+                    <img src="IMAGENES/3ny7.jpg" alt="paris" style="border-radius: 4%; width: 30%; height: auto;">
            </div>
+      
            
+<!-- 
+
+max-width: 100%; /* Ajusta el ancho al contenedor */
+        height: auto; /* Mantiene la proporción */
+        flex: 1; /* Hace que las imágenes compartan el ancho por igual */
+        width: 30%; /* Ocupan aprox. un tercio cada una */
+    }
+
+    /* Responsividad para pantallas pequeñas */
+    @media (max-width: 600px) {
+        .contenedor-imagenes {
+            flex-direction: column; /* Pone imágenes en vertical */
+            align-items: center;
+        }
+        .imagen-responsive {
+            width: 80%; /* Más grandes en móvil */
+        }
+        }-->
+
+
+
 <!--enlaces--> <div style="display: flex; align-items: CENTER; align-content: center; padding: 30px; justify-content: space-between; justify-items:center;">
          
     <DIV style="flex:1; padding: 10px; align-items: center; justify-content:top; text-align: CENTER;"><a style="text-decoration: none; color: #5f3b04;  font-family: Muli, sans-serif;; font-size: 50px;"  href="1paris.html"><b>PARIS</b></a></div>
-    
-    <DIV style="flex:1; padding: 10px; align-items: center; justify-content:top; text-align: CENTER;"><a style="text-decoration: none; color: #5f3b04;  font-family: Muli, sans-serif;; font-size: 50px;"  href="2london.html"><b>LONDRES</b></a></div>
+        <DIV style="flex:1; padding: 10px; align-items: center; justify-content:top; text-align: CENTER;"><a style="text-decoration: none; color: #5f3b04;  font-family: Muli, sans-serif;; font-size: 50px;"  href="2london.html"><b>LONDRES</b></a></div>
     <DIV style="flex:1; padding: 10px; align-items: center; justify-content:top; text-align: CENTER;"><a style="text-decoration: none; color: #5f3b04;  font-family: Muli, sans-serif;; font-size: 50px;"  href="3ny.html"><b>NUEVA YORK</b></a></div>
                         </div>
 
@@ -57,8 +72,7 @@
 
 <footer>
 <div style="display: fles;  size: 12px; color: grey; font-family: Arial, Helvetica, sans-serif; font-size: 10px;">
-   <div style=" text-align: left; align-content: left; align-items: left; color: #5f3b04"><a style="text-decoration: none" href="index.html"><p>Inicio</p></a></div>
-   <div style=" text-align: right; align-content: right; align-items: right; color: grey;"><p>Pagina creada en el curso de WEB</p></div>
+      <div style=" text-align: right; align-content: right; align-items: right; color: grey;"><p>Pagina creada en el curso de WEB</p></div>
    </div>
 </footer>
 
